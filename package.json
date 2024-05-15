@@ -1,0 +1,39 @@
+{
+  "name": "boilerplates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "test": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint": "^9.2.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
+}

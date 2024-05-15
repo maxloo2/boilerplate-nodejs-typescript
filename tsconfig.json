@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    // "noEmit": true,
+    "skipLibCheck": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "rootDir": "src",
+    "outDir": "build",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
